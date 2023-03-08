@@ -9,6 +9,7 @@ Things I did :
 - A service to call API
 - Create a Manager to persist and flush the picture of the day with Doctrine
 - Make a migration 
+- Twig
 
 
 Things I failed : 
