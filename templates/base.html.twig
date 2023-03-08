@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Nasa Pictures |
+        {% block title %}{% endblock %}
+    </title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="https://apod.nasa.gov/apod/astropix.html">Nasa Pictures</a>
+        </div>
+    </nav>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <main>
+        <div>
+            {% block body %}{% endblock %}
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Picture Of The Day
+{% endblock %}
+
+{% block body %}
+    <div>
+        <div>
+            {% if picture is defined %}
+                {% if picture.media_type == 'image' %}
+                    <h1>Picture of the day : {{ picture.date }}</h1>
+                    <h2> Title : {{ picture.title }}</h2>
+                    <p>{{ picture.explanation }}</p>
+                    <img src = {{ picture.hdurl }}>
+                {% else %}
+                    <h1>The Picture of the day is a video</h1>
+                    <h2>Picture of the previous day : {{ picture.title }}</h2>
+                    <p>{{ picture.explanation }}</p>
+                    <img src = {{ pciture.hdurl }}
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
